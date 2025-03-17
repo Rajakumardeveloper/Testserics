@@ -1,160 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   
-    <title>Testserics</title>
-    <style>
-  
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Pacifico&display=swap');
 
-    *{
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Testserics</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Pacifico&display=swap');
+
+    * {
       margin: 0px;
       padding: 0px;
       box-sizing: border-box;
     }
-    
-      body{
-        width: 100%;
-        height: 100%;
-        background-color:white;
+
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: white;
       font-family: Arial, Sans-Serif;
       position: relative;
-      }
-      header{
-        position:sticky;
-        top: 0px;
-        width: 100%;
-        padding: 20px 20px;
-        display: flex;
-        align-items: center;
-        background-color:white;
-        
-        justify-content: space-between;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      header h1{
-        font-family: "Pacifico", serif;
-      }
-      main{
-        width: 90%;
-        height: 500px;
-        padding: 20px;
-        border-radius: 20px;
-        margin: 30px auto;
-      background-color:;
-      }
-      main img{
-        width: 90%;
+    }
+
+    header {
+      position: sticky;
+      top: 0px;
+      width: 100%;
+      padding: 20px 20px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-weight: bold;
+      font-family: "Pacifico", serif;
+    }
+
+    main {
+      width: 90%;
+      height: 500px;
+      padding: 20px;
+      border-radius: 20px;
+      margin: 30px auto;
+
+    }
+
+    main img {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+    }
+
+    header button,
+    a {
+      background-color: green;
+      padding: 12px 10px;
+      text-decoration: none;
+      border-style: none;
+      border-radius: 20px;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      font-family: Sans-Serif;
+
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: row-reverse;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      height: 100%;
+      width: 100%;
+    }
+
+    .hero .image {
+      width: 50%;
+      height: 100%;
+
+    }
+
+    .hero .image img {
+      background-size: cover;
+
+    }
+
+    .hero .info {
+      padding: 20px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-title {
+      font-size: 45px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+
+    .hero-subtitle {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .hero-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .hero-button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    @media(max-width:768px) {
+      main {
         height: auto;
-        padding: 10px;
       }
-      header button, a{
-        background-color: green;
-        padding: 12px 10px;
-        text-decoration: none;
-        border-style: none;
-        border-radius: 20px;
-        color: white;
+
+      .hero {
+        width: 100%;
+        display: block;
+
+      }
+
+      .hero .image {
+        width: 100%;
+      }
+
+      .hero .info {
+        width: 100%;
+      }
+
+      .hero-title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .hero-subtitle {
         font-size: 15px;
         font-weight: bold;
-        font-family: Sans-Serif;
-        
+        margin-bottom: 25px;
       }
-        .hero {
-            display: flex;
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          height: 100%;
-            width: 100%;
-        }
 
-        .hero img {
-            width: 100%;
-            height: 50%;
-            margin-bottom: 20px;
-        }
+      .hero-button {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
 
-        .hero-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .hero-subtitle {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .hero-button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .hero-button:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            
-            width: 100%;
-            padding: 20px;
-            text-align: center;
-            background-color: #fff;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-            
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 14px;
-        }
-        @media(max-width:768px){
-          main{
-            height: auto;
-          }
-          .hero{
-              width: 100%;
-            display:block;
-              
-          }
-        }
-    </style>
-  </head>
-  <body>
-    <header>
-        <div class="header-title"><h1>Testserics.com</h1></div>
-      <button><a href="category.html"  >Get Started</a></button>
-    </header>
-    <main>
-        <div class="hero">
-        <img src="https://testbook.com/assets/img/index/home-banner__illust.svg" alt="Hero Image">
-           <div class="image"> <div class="hero-title">Welcome to TestSerics</div>
-            <div class="hero-subtitle">India's No. 1 Exam Prep App</div>
-            <div class="hero-buttons">
-                <a href="category.html" class="hero-button">Get Started</a>
-                <a href="Information.html" class="hero-button">Learn More</a></div>
-            </div>
+<body>
+  <header>
+    <div class="header-title">
+      <h1>Testserics.com</h1>
+    </div>
+    <button><a href="category.html">Get Started</a></button>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="image"><img src="https://testbook.com/assets/img/index/home-banner__illust.svg" alt="Hero Image">
+      </div>
+      <div class="info">
+        <div class="hero-title">Welcome to TestSerics</div>
+        <div class="hero-subtitle">India's No. 1 Exam Prep App</div>
+        <div class="hero-buttons">
+          <a href="category.html" class="hero-button">Get Started</a>
+          <a href="Information.html" class="hero-button">Learn More</a>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Testserics.com. All rights reserved.</p>
-    </footer>
-  </body>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Testserics.com. All rights reserved.</p>
+  </footer>
+</body>
+
 </html>
